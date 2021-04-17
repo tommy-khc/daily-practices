@@ -3,9 +3,12 @@ package javaSpring;
 import javaSpring.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.awt.*;
+
 public class Car {
     private String name;
     private String size;
+    private Color color;
     private int price;
     private String status;
 
@@ -59,5 +62,13 @@ public class Car {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
     }
 }

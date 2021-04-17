@@ -1,11 +1,11 @@
 package trial;
 
-import questions.question2.Cat;
+import practiceQuestions.question2.Cat;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static questions.summationQuestion.summationArithmeticSequenceFunction;
+import static practiceQuestions.question1.summationQuestion.summationArithmeticSequenceFunction;
 
 public class RunMain {
     public static void main(String[] args) {

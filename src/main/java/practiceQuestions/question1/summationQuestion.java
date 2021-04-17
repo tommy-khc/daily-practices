@@ -1,4 +1,4 @@
-package questions;
+package practiceQuestions.question1;
 
 public class summationQuestion {
     public static int summationArithmeticSequenceFunction (int a_1, int d, int a_nLessThan) {

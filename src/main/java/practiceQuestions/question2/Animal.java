@@ -1,4 +1,4 @@
-package questions.question2;
+package practiceQuestions.question2;
 
 public interface Animal {
     String walk();
