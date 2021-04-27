@@ -29,22 +29,22 @@ public class CarDoubleSortQuestionTest {
         carList.add(new Car(Color.BLUE));
 
         CarDoubleSortQuestion question = new CarDoubleSortQuestion(carList);
-        List<Car> carListAns = question.calculateAnswer();
+        List<Car> answer = question.calculateAnswer();
 
-        List<Car> carListExpectedAns = new ArrayList<>();
-        carListExpectedAns.add(new Car(Color.WHITE));
-        carListExpectedAns.add(new Car(Color.WHITE));
-        carListExpectedAns.add(new Car(Color.WHITE));
-        carListExpectedAns.add(new Car(Color.WHITE));
-        carListExpectedAns.add(new Car(Color.BLUE));
-        carListExpectedAns.add(new Car(Color.BLUE));
-        carListExpectedAns.add(new Car(Color.BLUE));
-        carListExpectedAns.add(new Car(Color.BLUE));
-        carListExpectedAns.add(new Car(Color.BLACK));
-        carListExpectedAns.add(new Car(Color.BLACK));
-        carListExpectedAns.add(new Car(Color.BLACK));
-        carListExpectedAns.add(new Car(Color.BLACK));
+        List<Car> expectedAns = new ArrayList<>();
+        expectedAns.add(new Car(Color.WHITE));
+        expectedAns.add(new Car(Color.WHITE));
+        expectedAns.add(new Car(Color.WHITE));
+        expectedAns.add(new Car(Color.WHITE));
+        expectedAns.add(new Car(Color.BLUE));
+        expectedAns.add(new Car(Color.BLUE));
+        expectedAns.add(new Car(Color.BLUE));
+        expectedAns.add(new Car(Color.BLUE));
+        expectedAns.add(new Car(Color.BLACK));
+        expectedAns.add(new Car(Color.BLACK));
+        expectedAns.add(new Car(Color.BLACK));
+        expectedAns.add(new Car(Color.BLACK));
 
-        assertEquals(carListExpectedAns, carListAns);
+        assertEquals(expectedAns, answer);
     }
 }
