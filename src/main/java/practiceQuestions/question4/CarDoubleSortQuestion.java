@@ -31,7 +31,7 @@ public class CarDoubleSortQuestion {
             carList.set(i+1, currentCar);
         }
         List<String> carColorStringList = carList.stream().map(o -> o.getColor().toString()).collect(Collectors.toList());
-        LOGGER.debug("The first sorting result: {}", carColorStringList);
+//        LOGGER.debug("The first sorting result: {}", carColorStringList);
 
         for (int j = 1; j < carList.size(); j++) {
             Car currentCar = carList.get(j);
@@ -43,7 +43,8 @@ public class CarDoubleSortQuestion {
             carList.set(i+1, currentCar);
         }
         carColorStringList = carList.stream().map(o -> o.getColor().toString()).collect(Collectors.toList());
-        LOGGER.debug("The second sorting result: {}", carColorStringList);
+//        LOGGER.debug("The second sorting result: {}", carColorStringList);
+        LOGGER.info("Result: {}", carColorStringList);
 
         return carList;
     }
