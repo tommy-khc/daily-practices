@@ -8,6 +8,8 @@ import java.awt.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
+//Question: sorting the cars by thier color (includes black, white, blue only).
+//The order is white, blue, black.
 public class CarDoubleSortQuestion {
 
     private static final Logger
