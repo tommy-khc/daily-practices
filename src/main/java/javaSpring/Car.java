@@ -24,6 +24,10 @@ public class Car {
         this.price = price;
     }
 
+    public Car (Color color) {
+        this.color = color;
+    }
+
     public void move(){
         carService.move();
     }
@@ -70,5 +74,27 @@ public class Car {
 
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                ", size='" + size + '\'' +
+                ", color=" + color +
+                ", price=" + price +
+                ", status='" + status + '\'' +
+                '}';
+    }
+
+    @Override
+    public int hashCode() {
+        String hashCodeString = this.toString();
+        return hashCodeString.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return this.hashCode() == obj.hashCode();
     }
 }
