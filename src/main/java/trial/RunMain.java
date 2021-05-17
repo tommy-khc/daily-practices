@@ -2,6 +2,8 @@ package trial;
 
 import practiceQuestions.question2.Cat;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,5 +17,13 @@ public class RunMain {
         System.out.println(catOne.walk());
         List<Integer> integerList = Arrays.asList(1,2,3);
         System.out.println(integerList.get(integerList.size()-1));
+
+        //casting
+        long long1 = 300;
+        byte byte1 = (byte) long1;
+
+        //"Copy" list
+        List<String> list = new ArrayList<>();
+        List<String> list1 = new ArrayList<>(list);
     }
 }
