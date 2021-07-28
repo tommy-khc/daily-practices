@@ -6,6 +6,8 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import static practiceQuestions.question1.summationQuestion.summationArithmeticSequenceFunction;
 
@@ -25,5 +27,13 @@ public class RunMain {
         //"Copy" list
         List<String> list = new ArrayList<>();
         List<String> list1 = new ArrayList<>(list);
+
+        //runing a function at the background
+        ExecutorService service = Executors.newFixedThreadPool(4);
+        service.submit(new Runnable() {
+            public void run() {
+//                sendSymbol();
+            }
+        });
     }
 }
