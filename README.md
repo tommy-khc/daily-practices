@@ -1,4 +1,4 @@
-# dailypractices
+# daily-practices
 
 Description: This project contains all daily coding practices in Java 8. 
 The module - AddressApp follows the tutorial in https://code.makery.ch/library/javafx-tutorial/part1/.
